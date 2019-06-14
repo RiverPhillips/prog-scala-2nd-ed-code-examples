@@ -33,7 +33,7 @@ class ShapesDrawingDriver(drawerActor: ActorRef) extends Actor {     // <5>
     case response: Response =>                                       // <8>
       println("ShapesDrawingDriver: Response = " + response)
     case unexpected =>                                               // <9>
-      println("ShapesDrawingDriver: ERROR: Received an unexpected message = "
-        + unexpected)
+    println("ShapesDrawingDriver: ERROR: Received an unexpected message = "
+      + unexpected)
   }
 }

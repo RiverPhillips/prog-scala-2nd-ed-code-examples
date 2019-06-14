@@ -10,5 +10,6 @@ def factorial(i: BigInt): BigInt = {
   fact(i, 1)
 }
 
-for (i <- 1 to 10)
-  println(s"$i:\t${factorial(i)}")
+//for (i <- 1 to 10)
+val i = 10000
+println(s"$i:\t${factorial(i)}")

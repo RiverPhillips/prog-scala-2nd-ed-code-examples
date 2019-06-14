@@ -1,9 +1,10 @@
+import scala.annotation.tailrec
 // src/main/scala/progscala2/fp/datastructs/fold-impl.sc
 
 // Simplified implementation. Does not output the actual collection type
 // that was input as Seq[A].
 def reduceLeft[A,B](s: Seq[A])(f: A => B): Seq[B] = {
-  @annotation.tailrec
+  @tailrec
   def rl(accum: Seq[B], s2: Seq[A]): Seq[B] = s2 match {
     case head +: tail => rl(f(head) +: accum, tail)
     case _ => accum

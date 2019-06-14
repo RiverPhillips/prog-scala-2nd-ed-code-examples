@@ -5,4 +5,5 @@ val b = new Button("Submit")
 // Result: b: oop.ui.Button = (button: label=Submit, (widget))
 
 b.draw()
+b click()
 // Result: Drawing: (button: label=Submit, (widget))

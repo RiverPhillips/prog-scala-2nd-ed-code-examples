@@ -9,7 +9,7 @@ object RemoveBlanks {
   def apply(path: String, compressWhiteSpace: Boolean = false): Seq[String] =
     for {
       line <- scala.io.Source.fromFile(path).getLines.toSeq          // <1>
-      if line.matches("""^\s*$""") == false                          // <2>
+      if !line.matches("""^\s*$""")                          // <2>
       line2 = if (compressWhiteSpace) line replaceAll ("\\s+", " ")  // <3>
               else line
     } yield line2                                                    // <4>

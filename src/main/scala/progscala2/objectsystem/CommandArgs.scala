@@ -1,5 +1,5 @@
 // src/main/scala/progscala2/objectsystem/CommandArgs.scala
-package progscala2.objectsystem
+package progscala2.objectsystemprogscala2.objectsystemprogscala2.objectsystem
 
 object CommandArgs {
 
